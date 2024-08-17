@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,12 +8,36 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        'main-white': 'var(--main-white)',
+        'main-red': 'var(--main-red)',
+        'main-blue': 'var(--main-blue)',
+        'main-gray': 'var(--main-gray)',
+      },
+      fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif']
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        aurora: "aurora 60s linear infinite",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+          
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // Ensure to include the correct plugin or remove if not needed
+    // e.g., require('tailwindcss-plugin') or your custom plugin
+  ],
 };
+
