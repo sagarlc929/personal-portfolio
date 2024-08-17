@@ -9,8 +9,8 @@ return (
       className="max-w-90 mt-0 mr-auto mb-24 ml-auto border-b-4 border-gray-200 text-4xl text-white"
       >These are my some of projects</h2>
       <div className="grid gap-[4rem] w-full sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project)=>(
-          <a className="group" href={project.href} target="_blank">
+        {projects.map((project, index)=>(
+          <a key={index} className="group" href={project.href} target="_blank">
             <img className="w-full h-[calc(100%-6.8rem)] object-cover"src={typeof project.imgSrc === 'string' ? project.imgSrc : project.imgSrc.src} />
             <p className="text-main-white text-2xl bg-main-gray">
               {console.log(project.imgSrc)}

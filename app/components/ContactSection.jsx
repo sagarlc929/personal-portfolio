@@ -15,7 +15,7 @@ const ContactSection = () =>{
   return (
   <section id="contact" className="flex flex-col justify-center items-center w-full h-[80vh] px-2 bg-main-gray">
       <div className="text-center">
-        <h2 className="text-main-white text-6xl font-bold  font-raleway ">Let's work together...</h2>
+        <h2 className="text-main-white text-6xl font-bold  font-raleway ">Let&apos;s work together...</h2>
         <p className="italic text-xl p-4 text-main-white ">How do you take your coffee?</p>
       </div>
       <div className="flex justify-center flex-wrap text-main-white text-3xl mt-4" >
